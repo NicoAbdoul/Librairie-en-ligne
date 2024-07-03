@@ -88,7 +88,7 @@ const Register = () => {
         e.preventDefault();
         try {
             // Remplacez l'URL vide par l'URL de votre backend où vous souhaitez envoyer les données d'inscription
-            await axios.post('https://example.com/api/register', { name, email, password });
+            await axios.post('http://localhost:3001/', { name, email, password });
 
             // Redirigez l'utilisateur vers la page de connexion après une inscription réussie
             history.push('/login');

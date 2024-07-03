@@ -87,7 +87,7 @@ const Login = () => {
         e.preventDefault();
         try {
             // Remplacez l'URL vide par l'URL de votre backend où vous souhaitez envoyer les données de connexion
-            await axios.post('https://example.com/api/login', { email, password });
+            await axios.post('http://localhost:3001/', { email, password });
 
             // Redirigez l'utilisateur vers le profil après une connexion réussie
             history.push('/profile');
